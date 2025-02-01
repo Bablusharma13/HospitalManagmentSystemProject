@@ -4,6 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background: url('hospital-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .feature h3 {
+            color: #007bff;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,8 +90,41 @@
         
     </nav>
 
-    <h2>Welcome to Our Hospital</h2>
-        <p>We provide the best healthcare services with state-of-the-art facilities and experienced medical professionals.</p>
-    
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h2>Welcome to Our Hospital</h2>
+            <p>Your health is our priority. We provide world-class medical care with compassion and expertise.</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature">
+            <h3>24/7 Emergency Care</h3>
+            <p>We are always here for you in times of emergency. Our emergency department is fully equipped and staffed.</p>
+        </div>
+        <div class="feature">
+            <h3>Experienced Doctors</h3>
+            <p>Our team of highly qualified doctors is dedicated to providing the best medical care.</p>
+        </div>
+        <div class="feature">
+            <h3>Advanced Technology</h3>
+            <p>We use the latest medical technology to ensure accurate diagnosis and effective treatment.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="container" style="text-align: center; padding: 20px;">
+        <h2>Book an Appointment Today!</h2>
+        <p>Don't wait, schedule your appointment with our expert doctors now.</p>
+        <a href="#appointment" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Book Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Hospital Management System. All rights reserved.</p>
+    </footer>   
 </body>
 </html>
