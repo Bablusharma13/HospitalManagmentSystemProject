@@ -18,7 +18,7 @@
             text-align: center;
         }
         nav {
-            background-color: #333;
+            background-color: #0073e6;
             overflow: hidden;
         }
         nav a {
@@ -31,6 +31,113 @@
         }
         nav a:hover {
             background-color: #575757;
+        }
+        .payment-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .payment-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .payment-header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .payment-header p {
+            color: #7f8c8d;
+        }
+
+        .payment-form {
+            display: grid;
+            grid-gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .card-details {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            
+        }
+
+        .billing-address {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .payment-summary {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .pay-button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .pay-button:hover {
+            background-color: #2980b9;
+        }
+
+        .security-note {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .lock-icon {
+            color: #27ae60;
+            margin-right: 5px;
         }
         footer {
             background-color: #0073e6;
@@ -60,18 +167,82 @@
     </nav>
 
     <!-- Payment Page -->
-    <div id="payment" class="container">
-        <h2>Payment</h2>
-        <form>
-            <label for="card-number">Card Number:</label>
-            <input type="text" id="card-number" name="card-number" required><br><br>
-            <label for="expiry-date">Expiry Date:</label>
-            <input type="text" id="expiry-date" name="expiry-date" required><br><br>
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" required><br><br>
-            <button type="submit">Pay Now</button>
-        </form>
+    <div class="payment-container">
+        <div class="payment-header">
+            <h1>Secure Payment Gateway</h1>
+            <p><span class="lock-icon">🔒</span>Your payment information is securely encrypted</p>
+        </div>
+
+        <div class="payment-form">
+            <div class="form-group">
+                <label>Card Number</label>
+                <input type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+            </div>
+
+            <div class="card-details">
+                <div class="form-group">
+                    <label>Expiration Date</label>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123" maxlength="3">
+                </div>
+                <div class="form-group">
+                    <label>Cardholder Name</label>
+                    <input type="text" placeholder="John Doe">
+                </div>
+            </div>
+
+            <div class="billing-address">
+                <h3>Billing Address</h3>
+                <div class="form-group">
+                    <label>Street Address</label>
+                    <input type="text" placeholder="123 Medical Street">
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" placeholder="New York">
+                </div>
+                <div class="form-group">
+                    <label>State</label>
+                    <input type="text" placeholder="NY">
+                </div>
+                <div class="form-group">
+                    <label>ZIP Code</label>
+                    <input type="text" placeholder="10001">
+                </div>
+            </div>
+
+            <div class="payment-summary">
+                <h3>Payment Summary</h3>
+                <div class="summary-item">
+                    <span>Consultation Fee</span>
+                    <span>$150.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Lab Tests</span>
+                    <span>$75.50</span>
+                </div>
+                <div class="summary-item">
+                    <span>Taxes</span>
+                    <span>$22.65</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total Amount</span>
+                    <span>$248.15</span>
+                </div>
+            </div>
+
+            <button class="pay-button">Pay Now</button>
+            <p class="security-note">
+                All transactions are secure and encrypted. We accept Visa, Mastercard, and American Express.
+            </p>
+        </div>
     </div>
+    <footer>
+        <p>&copy; 2023 City General Hospital. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

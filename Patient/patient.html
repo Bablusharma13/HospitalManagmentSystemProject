@@ -18,7 +18,7 @@
             text-align: center;
         }
         nav {
-            background-color: #333;
+            background-color: #0073e6;
             overflow: hidden;
         }
         nav a {
@@ -31,6 +31,60 @@
         }
         nav a:hover {
             background-color: #575757;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #0073e6;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-form button {
+            padding: 10px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #005bb5;
+        }
+        .login-form a {
+            margin-top: 10px;
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            
         }
     </style>
 </head>
@@ -49,12 +103,20 @@
         
     </nav>
 
-    <h2>Patient Login</h2>
+    <div class="login-container">
+        <h2>Patient Login</h2>
         <form class="login-form">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
+            <a href="#forgot-password">Forgot Password?</a>
+            <p>Don't have an account? <a href="#register">Register here</a>.</p>
         </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 City General Hospital. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
