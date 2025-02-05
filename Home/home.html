@@ -79,6 +79,47 @@
         .container h2{
             color: #007bff;
         }
+        /* Appointments Section */
+        .appointments {
+            padding: 50px 0;
+            background: #f4f4f4;
+        }
+
+        .appointments h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .appointments form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointments label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .appointments input, .appointments select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .appointments .btn {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
         footer {
             background-color: #0073e6;
             color: white;
@@ -136,8 +177,37 @@
     <div class="container" style="text-align: center; padding: 20px;">
         <h2>Book an Appointment Today!</h2>
         <p>Don't wait, schedule your appointment with our expert doctors now.</p>
-        <a href="#appointment" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Book Now</a>
+        <a href="#appointments" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Book Now</a>
     </div>
+    <!-- Appointment Section -->
+    <section id="appointments" class="appointments">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="dr_john">Dr. John Doe</option>
+                    <option value="dr_jane">Dr. Jane Smith</option>
+                    <option value="dr_emily">Dr. Emily Johnson</option>
+                </select>
+
+                <button type="submit" class="btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer>
