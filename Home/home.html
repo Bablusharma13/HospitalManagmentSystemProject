@@ -118,6 +118,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            
         }
 
         footer {
@@ -193,8 +194,11 @@
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required>
 
-                <label for="date">Appointment Date:</label>
-                <input type="date" id="date" name="date" required>
+                <label for="">Select Department</label>
+                <select class="form-select">
+                    <option>Cardiology</option>
+                    <option>Pediatrics</option>
+                </select>
 
                 <label for="doctor">Select Doctor:</label>
                 <select id="doctor" name="doctor" required>
@@ -203,6 +207,11 @@
                     <option value="dr_emily">Dr. Emily Johnson</option>
                 </select>
 
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label>Appointment Time</label>
+                                <input type="time" class="form-control" required>
                 <button type="submit" class="btn">Book Appointment</button>
             </form>
         </div>
