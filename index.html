@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,6 +35,89 @@
         nav a:hover {
             background-color: #575757;
         }
+
+        .hero {
+            /* background: url('hospital-image.jpg') no-repeat center center/cover; */
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #007bff;
+            text-align: center;
+            
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: black;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .feature h3 {
+            color: #007bff;
+        }
+        .container{
+            margin-bottom: 90px;
+        }
+
+        .container h2{
+            color: #007bff;
+        }
+        /* Appointments Section */
+        .appointments {
+            padding: 50px 0;
+            background: #f4f4f4;
+        }
+
+        .appointments h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .appointments form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointments label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .appointments input, .appointments select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .appointments .btn {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
         footer {
             background-color: #0073e6;
             color: #fff;
@@ -61,9 +144,78 @@
         
     </nav>
     
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="hero2.png" alt="" height="400px">
+        <div>
+            <h2>Welcome to Our Hospital</h2>
+            <p>Your health is our priority. We provide world-class medical care with compassion and expertise.</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature">
+            <h3>24/7 Emergency Care</h3>
+            <p>We are always here for you in times of emergency. Our emergency department is fully equipped and staffed.</p>
+        </div>
+        <div class="feature">
+            <h3>Experienced Doctors</h3>
+            <p>Our team of highly qualified doctors is dedicated to providing the best medical care.</p>
+        </div>
+        <div class="feature">
+            <h3>Advanced Technology</h3>
+            <p>We use the latest medical technology to ensure accurate diagnosis and effective treatment.</p>
+        </div>
+        
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="container" style="text-align: center; padding: 20px;">
+        <h2>Book an Appointment Today!</h2>
+        <p>Don't wait, schedule your appointment with our expert doctors now.</p>
+        <a href="#appointments" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Book Now</a>
+    </div>
+    <!-- Appointment Section -->
+    <section id="appointments" class="appointments">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="">Select Department</label>
+                <select class="form-select">
+                    <option>Cardiology</option>
+                    <option>Pediatrics</option>
+                </select>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="dr_john">Dr. John Doe</option>
+                    <option value="dr_jane">Dr. Jane Smith</option>
+                    <option value="dr_emily">Dr. Emily Johnson</option>
+                </select>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label>Appointment Time</label>
+                                <input type="time" class="form-control" required>
+                <button type="submit" class="btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
     
     <footer>
         <p>&copy; 2023 Hospital Management System. All rights reserved.</p>
     </footer>
 </body>
-</html> -->
+</html>
