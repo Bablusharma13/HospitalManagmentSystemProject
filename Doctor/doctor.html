@@ -107,7 +107,7 @@
 }
 
 .doctor-card {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -115,12 +115,19 @@
     margin-bottom: 30px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("../images/backgroung-pattern-1.png");
+    background-size: cover;
+    background-position:  center;
+}
+.doctor-card:hover img{
+    transform: scale(1.1);
 }
 
 .doctor-card img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
+    
 }
 
 .doctor-card h3 {
