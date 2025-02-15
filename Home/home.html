@@ -59,7 +59,7 @@
             font-size: 1.2rem;
             color: black;
         }
-        .features {
+        .card-container {
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -68,50 +68,47 @@
             width: 100%;
             text-align: center;
             gap: 10px;
-            /* align-items: center; */
-        }
-        .feature {
+            overflow-x: auto;
+            gap: 16px; /* Space between cards * */
+            margin-bottom: 90px;
+            
+        } 
+        .card {
             text-align: center;
             padding: 20px;
-            width: 30%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             background-image: url("../images/backgroung-pattern-1.png");
             background-size: cover;
             background-position:  center;
+            flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+            width: 200px; /* Fixed width for each card */
+            height: 210px; /* Fixed height for each card */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #333;
         }
-        .feature h3 {
+        .card h3 {
             color: #007bff;
         }
-        .container{
-            margin-bottom: 90px;
-        }
 
-        .container h2{
+        .card-container h2{
             color: #007bff;
         }
 
         .card-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 16px;
-    gap: 16px; /* Space between cards */
-    background-color: #f4f4f4;
-}
+            display: flex;
+            overflow-x: auto;
+            padding: 16px;
+            gap: 16px; /* Space between cards */
+            background-color: #f4f4f4;
+        }
 
-.card {
-    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
-    width: 200px; /* Fixed width for each card */
-    height: 210px; /* Fixed height for each card */
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: #333;
-}
         /* Appointments Section */
         .appointments {
             padding: 50px 0;
@@ -192,8 +189,8 @@
     </div>
 
     <!-- Features Section -->
-    <div class="features">
-        <!-- <div class="feature">
+    <!-- <div class="features">
+        <div class="feature">
             <h3>24/7 Emergency Care</h3>
             <p>We are always here for you in times of emergency. Our emergency department is fully equipped and staffed.</p>
         </div>
@@ -204,22 +201,22 @@
         <div class="feature">
             <h3>Advanced Technology</h3>
             <p>We use the latest medical technology to ensure accurate diagnosis and effective treatment.</p>
-        </div> -->
-        <div class="card-container">
-            <div class="card">Card 1</div>
-            <div class="card">Card 2</div>
-            <div class="card">Card 3</div>
-            <div class="card">Card 4</div>
-            <div class="card">Card 5</div>
-            <div class="card">Card 6</div>
-            <div class="card">Card 1</div>
-            <div class="card">Card 2</div>
-            <div class="card">Card 3</div>
-            <div class="card">Card 4</div>
-            <div class="card">Card 5</div>
-            <div class="card">Card 6</div>
         </div>
         
+    </div> -->
+    <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
     </div>
 
     <!-- Call to Action Section -->
