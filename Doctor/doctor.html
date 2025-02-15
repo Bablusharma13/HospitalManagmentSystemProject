@@ -33,112 +33,69 @@
         nav a:hover {
             background-color: #575757;
            }
-        /*.login-container {
+
+        #doctors {
             background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
+            padding: 50px 0;
             text-align: center;
+        }
+
+        #doctors h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 60px;
-            margin-top: 200px;
-            margin-left: 200px;
-            
         }
-        .login-container h2 {
-            margin-bottom: 20px;
-            color: #0073e6;
-        }
-        .login-form {
+
+        .doctor-profile {
             display: flex;
-            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        .login-form input {
+
+        .doctor-card {
+            /* background-color: #f9f9f9; */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-image: url("../images/backgroung-pattern-1.png");
+            background-size: cover;
+            background-position:  center;
+        }
+        .doctor-card:hover {
+            transform: scale(1.01);
+        }
+        .doctor-card img {
+            width: 100%;
+            border-radius: 8px;
             margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .login-form button {
-            padding: 10px;
-            background-color: #0073e6;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .login-form button:hover {
-            background-color: #005bb5;
-        }
-        .login-form a {
-            margin-top: 10px;
-            color: #0073e6;
-            text-decoration: none;
-        }
-        .login-form a:hover {
-            text-decoration: underline;
-        } */
-
-        /* Doctor Section */
-#doctors {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-#doctors h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.doctor-profile {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.doctor-card {
-    /* background-color: #f9f9f9; */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 280px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-image: url("../images/backgroung-pattern-1.png");
-    background-size: cover;
-    background-position:  center;
-}
-.doctor-card:hover img{
-    transform: scale(1.1);
-}
-.doctor-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
     
-}
+        }
 
-.doctor-card h3 {
-    font-size: 24px;
-    color: #007bff;
-    margin-bottom: 10px;
-}
+        .doctor-card h3 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
 
-.doctor-card p {
-    font-size: 16px;
-    margin: 5px 0;
-}
+        .doctor-card p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
         footer {
             background-color: #0073e6;
             color: #fff;
@@ -183,56 +140,56 @@
             <h2>Meet Our Doctors</h2>
             <div class="doctor-profile">
                 <div class="doctor-card">
-                    <img src="team1.jpg" alt="Doctor 1">
+                    <img src="../images/team1.jpg" alt="Doctor 1">
                     <h3>Dr. John Doe</h3>
                     <p>Specialization: Cardiologist</p>
                     <p>Experience: 10 years</p>
                     <p>Contact: +123 456 789</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team2.jpg" alt="Doctor 2">
+                    <img src="../images/team2.jpg" alt="Doctor 2">
                     <h3>Dr. Jane Smith</h3>
                     <p>Specialization: Neurologist</p>
                     <p>Experience: 8 years</p>
                     <p>Contact: +987 654 321</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team3.jpg" alt="Doctor 3">
+                    <img src="../images/team3.jpg" alt="Doctor 3">
                     <h3>Dr. Emily White</h3>
                     <p>Specialization: Orthopedic Surgeon</p>
                     <p>Experience: 12 years</p>
                     <p>Contact: +321 654 987</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team4.jpg" alt="Doctor 4">
+                    <img src="../images/team4.jpg" alt="Doctor 4">
                     <h3>Dr. Emily White</h3>
                     <p>Specialization: Orthopedic Surgeon</p>
                     <p>Experience: 12 years</p>
                     <p>Contact: +321 654 987</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team5.jpg" alt="Doctor 5">
+                    <img src="../images/team5.jpg" alt="Doctor 5">
                     <h3>Dr. Emily White</h3>
                     <p>Specialization: Orthopedic Surgeon</p>
                     <p>Experience: 12 years</p>
                     <p>Contact: +321 654 987</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team6.jpg" alt="Doctor 6">
+                    <img src="../images/team6.jpg" alt="Doctor 6">
                     <h3>Dr. Emily White</h3>
                     <p>Specialization: Orthopedic Surgeon</p>
                     <p>Experience: 12 years</p>
                     <p>Contact: +321 654 987</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team1.jpg" alt="Doctor 7">
+                    <img src="../images/team1.jpg" alt="Doctor 7">
                     <h3>Dr. Emily White</h3>
                     <p>Specialization: Orthopedic Surgeon</p>
                     <p>Experience: 12 years</p>
                     <p>Contact: +321 654 987</p>
                 </div>
                 <div class="doctor-card">
-                    <img src="team2.jpg" alt="Doctor 8">
+                    <img src="../images/team2.jpg" alt="Doctor 8">
                     <h3>Dr. Emily White</h3>
                     <p>Specialization: Orthopedic Surgeon</p>
                     <p>Experience: 12 years</p>
