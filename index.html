@@ -31,8 +31,10 @@
 
         }
         nav {
+            /* display: flex; */
             background-color: #0073e6;
             overflow: hidden;
+            
         }
         nav a {
             float: left;
@@ -41,10 +43,28 @@
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            
         }
         nav a:hover {
             background-color: #575757;
+
         }
+        .btn{
+            float: right;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            background-color: #0073e6;
+            padding: 14px 14px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-right: 5px;
+            /* text-decoration: none; */
+        }
+        .btn:hover{
+            background-color: #575757;
+        }
+
         .hero {
             /* background: url('hospital-image.jpg') no-repeat center center/cover; */
             height: 700px;
@@ -188,7 +208,7 @@
             <a href="Doctor/doctor.html">Doctors</a>
             <a href="Payment/payment.html">Make Payment</a>
             <a href="Contact/contact.html">Contact Us</a>
-        
+            <button class="btn" >Make Appointment</button>
         </nav>
 
     </div>
