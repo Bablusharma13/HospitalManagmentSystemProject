@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Management System</title>
+    <title>Home</title>
     <style>
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* background-color: #f4f4f4; */
-            /* background-image: url("images/hero.jpg"); */
-            height: 100%;
-            width: 100%;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #007bff;
             color: white;
             padding: 20px 0;
             text-align: center;
+            /* position: fixed;
+            width: 100%; */
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+
         }
         nav {
             background-color: #0073e6;
@@ -35,20 +45,23 @@
         nav a:hover {
             background-color: #575757;
         }
-
         .hero {
             /* background: url('hospital-image.jpg') no-repeat center center/cover; */
-            height: 500px;
+            height: 700px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #007bff;
             text-align: center;
-            background-image: url("./images/backgroung-pattern-1.png");
+            /* background-image: url("../images/backgroung-pattern-1.png"); */
             background-size: cover;
-            background-position:  center;   
+            background-position:  center;
+            /* background-image: url("../images/hero2.png"); */
+    
         }
-
+        .hero img{
+            margin-top: 200px;
+        }
         .hero h2 {
             font-size: 3rem;
             margin: 0;
@@ -57,7 +70,6 @@
             font-size: 1.2rem;
             color: black;
         }
-
         .card-container {
             display: flex;
             justify-content: space-around;
@@ -68,9 +80,8 @@
             text-align: center;
             gap: 10px;
             overflow-x: auto;
-            gap: 16px; /* Space between cards */
+            gap: 16px; /* Space between cards * */
             margin-bottom: 90px;
-            
             
         } 
         .card {
@@ -96,9 +107,6 @@
         .card h3 {
             color: #007bff;
         }
-        .card-container{
-            margin-bottom: 90px;
-        }
 
         .card-container h2{
             color: #007bff;
@@ -111,6 +119,7 @@
             gap: 16px; /* Space between cards */
             background-color: #f4f4f4;
         }
+
         /* Appointments Section */
         .appointments {
             padding: 50px 0;
@@ -152,20 +161,24 @@
             cursor: pointer;
             
         }
+
         footer {
             background-color: #0073e6;
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 10px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
     <header>
         <h1>Hospital Management System</h1>
+        
     </header>
     <nav>
         <a href="Home/home.html" >Home</a>
@@ -177,10 +190,13 @@
         <a href="Contact/contact.html">Contact Us</a>
         
     </nav>
-    
+
+</div>
+
+
     <!-- Hero Section -->
     <div class="hero">
-        <img src="./images/hero2.png" alt="" height="500px" width="700">
+        <img src="./images/hero2.png" alt="" height="500px" width="700px">
         <div class="hero2">
             <h2>Welcome to Our Hospital</h2>
             <p>Your health is our priority. We provide world-class medical care with compassion and expertise.</p>
@@ -261,9 +277,10 @@
         </div>
     </section>
 
-    
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Hospital Management System. All rights reserved.</p>
-    </footer>
+    </footer>   
 </body>
 </html>
